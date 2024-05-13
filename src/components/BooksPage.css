@@ -1,0 +1,65 @@
+/* BooksPage.css */
+
+.books-container {
+  max-width: 1000px;
+  margin: 70px auto 0;
+  /* Adjusted margin to add padding at the top for the navbar */
+  padding: 20px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Change to 3 columns */
+  /* Arrange books in 3 columns with a minimum width of 300px */
+  grid-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  border: 1px solid #000;
+  /* Change border color to black */
+  padding: 10px;
+}
+
+.book-number {
+  color: #000;
+  /* Change the color of the numbers to black */
+  font-weight: bold;
+  /* Make the numbers bold */
+}
+
+.book-number::after {
+  content: '. ';
+  /* Add a period and a space after the number */
+}
+
+.book-link {
+  text-decoration: none;
+  color: #000;
+  /* Change link color to black */
+  font-weight: bold;
+}
+
+.book-link:hover {
+  text-decoration: underline;
+}
+
+.books-container h2 {
+  font-size: 34px;
+  /* Increase font size of the h2 */
+}
+
+/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+  .books-container {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .book-item {
+    padding: 5px;
+    /* Reduce padding for book items */
+  }
+}
